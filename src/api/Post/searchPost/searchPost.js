@@ -7,9 +7,9 @@ export default {
         where: {
           OR: [
             {
-              location_contains: args.term
+              location_starts_with: args.term
             },
-            { caption_contains: args.term }
+            { caption_starts_with: args.term }
           ]
         }
       })
