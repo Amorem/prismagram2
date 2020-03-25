@@ -13,8 +13,8 @@ type User {
   likes: [Like!]!
   comments: [Comment!]!
   rooms: [Room!]!
-  amIFollowing: Boolean!
-  itsMe: Boolean!
+  isFollowing: Boolean!
+  isSelf: Boolean!
 }
 
 type Post {
