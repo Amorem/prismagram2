@@ -19,33 +19,6 @@ export const FILE_FRAGMENT = `
         url
 `;
 
-export const FULL_POST_FRAGMENT = `
-    fragment PostParts on Post {
-        id
-        location
-        caption    
-        files {
-            id
-            url
-
-        }
-        comments {
-            id
-            text
-            user {
-                id
-                username
-                avatar
-            }
-        }
-        user {
-           id
-           username
-           avatar
-        }
-    }
-`;
-
 export const ROOM_FRAGMENT = `
 fragment RoomParts on Room {
     id
