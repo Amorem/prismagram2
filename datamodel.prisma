@@ -6,7 +6,7 @@ type User {
   firstName: String @default(value: "")
   lastName: String
   bio: String
-  loginSecret: String!
+  loginSecret: String
   followers: [User!]! @relation(name: "FollowRelation")
   following: [User!]! @relation(name: "FollowRelation")
   posts: [Post!]! @relation(name: "PostsOfUser" , onDelete: CASCADE)

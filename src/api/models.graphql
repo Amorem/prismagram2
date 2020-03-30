@@ -7,7 +7,7 @@ type User {
   lastName: String
   fullName: String
   bio: String
-  loginSecret: String!
+  loginSecret: String
   followers: [User!]!
   following: [User!]!
   posts: [Post!]!
