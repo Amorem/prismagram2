@@ -17,6 +17,7 @@ type User {
 
 type Post {
   id: ID! @id
+  createdAt: DateTime! @createdAt
   location: String
   caption: String!
   user: User! @relation(name: "PostsOfUser")

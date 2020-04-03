@@ -1,13 +1,3 @@
-export const COMMENT_FRAGMENT = `
-    fragment CommentParts on Comment {
-        id
-        text
-        user {
-            ${USER_FRAGMENT}
-        }
-    }
-`;
-
 export const USER_FRAGMENT = `
         id
         username
@@ -29,6 +19,16 @@ fragment RoomParts on Room {
         ${MESSAGE_FRAGMENT}
     }
 }
+`;
+
+export const COMMENT_FRAGMENT = `
+    fragment CommentParts on Comment {
+        id
+        text
+        user {
+            ${USER_FRAGMENT}
+        }
+    }
 `;
 
 export const MESSAGE_FRAGMENT = `
